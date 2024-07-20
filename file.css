@@ -1,0 +1,115 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #5d797e;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Center align header content */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    animation: fadeInUp 1s ease; /* Apply animation */
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #5d797e;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center; /* Center align section content */
+    position: relative; /* Position for background animation */
+    overflow: hidden; /* Hide overflowing content for background */
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Center align heading within section */
+    animation: fadeInDown 1s ease; /* Apply animation */
+    position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+/* Style for boxes around section titles */
+section h2::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust to position box correctly */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; /* Adjust width of the box */
+    height: 5px; /* Adjust height of the box */
+    background-color: #fff; /* Box background color */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Background Transitions */
+#about {
+    background-color: #5d797e;
+    color: black;
+    background-size: cover;
+    background-position: center;
+    background-image: u
+    
+       
+    }
